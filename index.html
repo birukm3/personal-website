@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name | Developer & Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-slate-100">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 border-b border-slate-800/60 bg-black/80 backdrop-blur">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between text-sm">
+      <nav class="flex gap-6 text-slate-300">
+        <a href="#about" class="hover:text-slate-50">about me</a>
+        <a href="#projects" class="hover:text-slate-50">projects</a>
+        <a href="#stack" class="hover:text-slate-50">stack</a>
+      </nav>
+      <div class="flex items-center gap-4 text-xs text-slate-400">
+        <button class="hover:text-slate-100">EN</button>
+        <button class="hover:text-slate-100">Amharic</button>
+        <span class="text-lg">☀️</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 pt-10 pb-20 space-y-16">
+
+    <!-- ABOUT / HERO -->
+    <section id="about" class="space-y-8">
+      <div class="space-y-2">
+        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
+          morning afternoon night.
+        </h1>
+        <p class="text-slate-300 max-w-2xl">
+          I love programming, writing, and sometimes you'll see me playing basketball. I’m always exploring new ideas
+          that spark my curiosity and keep me building.
+        </p>
+      </div>
+
+      <!-- profile row -->
+      <div class="flex items-center gap-4">
+        <div class="h-20 w-20 md:h-24 md:w-24 rounded-full overflow-hidden border border-slate-700">
+          <img
+            src="headshot.jpg"
+            alt="Biruk Molla headshot"
+            class="h-full w-full object-cover"
+          />
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="font-medium text-slate-100">Biruk Molla</p>
+          <p class="text-xs text-slate-400">Computer Science Student</p>
+        </div>
+      </div>
+
+      <!-- intro text -->
+      <div class="space-y-3 text-sm leading-relaxed text-slate-300">
+        <p>
+          I’m a <span class="font-semibold">Computer Science student</span> at Notre Dame and a hands-on
+          builder who loves turning ideas into real, working systems. I’m especially interested in
+          <span class="font-semibold">full-stack development</span>, data analytics, and experimenting with
+          modern technologies to create useful, well-thought-out applications.
+        </p>
+
+        <p>
+          Most of what I learn comes from <span class="font-semibold">building personal projects</span> from
+          small experiments to full applications. I enjoy the creativity of the
+          <span class="font-semibold">frontend</span>, but I’m just as comfortable on the
+          <span class="font-semibold">backend</span> designing APIs, working with data, and understanding
+          how everything connects under the hood.
+        </p>
+
+        <p>
+          Lately, I’ve been exploring <span class="font-semibold">robotics</span>, especially how software,
+          sensors, and hardware come together to create systems that move, respond, and interact with
+          the real world. I’m always looking to <span class="font-semibold">improve</span>, learn new tools,
+          and grow through every project I take on.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="space-y-6">
+      <div>
+        <h2 class="text-lg font-semibold tracking-tight">Experience</h2>
+        <p class="text-xs text-slate-400">Places where I’ve learned and built cool things.</p>
+      </div>
+
+      <div class="space-y-10">
+        <!-- ========== MICHIGAN ========== -->
+        <article class="flex items-start gap-5">
+          <div class="flex flex-col items-center pt-1">
+            <div class="h-5 w-5 rounded-full border-2 border-slate-100 flex items-center justify-center">
+              <div class="h-2.5 w-2.5 rounded-full bg-slate-100/90"></div>
+            </div>
+            <div class="mt-1 w-px flex-1 bg-slate-700/70"></div>
+          </div>
+
+          <div class="flex-1">
+            <div class="mb-2">
+              <h3 class="text-base md:text-lg font-semibold text-slate-50">Research Assistant</h3>
+              <p class="text-sm text-slate-300">University of Michigan</p>
+              <p class="text-xs text-slate-500">September 2025 – Present</p>
+            </div>
+
+            <ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside mb-3">
+              <li>
+                Utilized Abaqus and CalculiX finite element solvers to model stress relaxation and
+                deformation, with Python scripts extracting stress and displacement data from ODB files for analysis.
+              </li>
+              <li>
+                Developed a C++ pipeline that integrates 3D geometry processing tools (PCL, CGAL) to
+                automate mesh generation, cut modeling, and stress deformation visualization.
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-2 text-xs mb-2">
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">C++</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">Abaqus</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">CalculiX</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">Python</span>
+            </div>
+
+            <a
+              href="https://github.com/birukm3/femSIM"
+              target="_blank"
+              class="text-slate-300 hover:text-white underline underline-offset-4 transition"
+            >
+              View Repo →
+            </a>
+          </div>
+        </article>
+
+        <!-- ========== NOTRE DAME ========== -->
+        <article class="flex items-start gap-5">
+          <div class="flex flex-col items-center pt-1">
+            <div class="h-5 w-5 rounded-full border-2 border-slate-100 flex items-center justify-center">
+              <div class="h-2.5 w-2.5 rounded-full bg-slate-100/90"></div>
+            </div>
+            <div class="mt-1 w-px flex-1 bg-slate-700/70"></div>
+          </div>
+
+          <div class="flex-1">
+            <div class="mb-2">
+              <h3 class="text-base md:text-lg font-semibold text-slate-50">Research Assistant</h3>
+              <p class="text-sm text-slate-300">University of Notre Dame</p>
+              <p class="text-xs text-slate-500">December 2024 – June 2025</p>
+            </div>
+
+            <ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside mb-3">
+              <li>
+                Engineered an AI-powered chatbot integrating a React-based front end with a Python FastAPI backend
+                and Ollama LLM, gaining foundational exposure to model integration and prompt engineering.
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-2 text-xs mb-2">
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">React</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">Python</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">FastAPI</span>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-100">Ollama LLM</span>
+            </div>
+
+            <a
+              href="https://github.com/SimretA/charadesAI"
+              target="_blank"
+              class="text-slate-300 hover:text-white underline underline-offset-4 transition"
+            >
+              View Repo →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS (RE-ARRANGED, FUTURISTIC, NO PICTURES) -->
+    <section id="projects" class="space-y-6">
+      <div>
+        <h2 class="text-lg font-semibold tracking-tight">Projects</h2>
+        <p class="text-xs text-slate-400">Things I build out of curiosity or need.</p>
+      </div>
+
+      <div class="relative">
+        <!-- subtle grid -->
+        <div
+          class="pointer-events-none absolute inset-0 -z-10 opacity-[0.18]"
+          style="
+            background-image:
+              linear-gradient(to right, rgba(148,163,184,0.12) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(148,163,184,0.12) 1px, transparent 1px);
+            background-size: 44px 44px;
+            mask-image: radial-gradient(circle at 50% 20%, black 0%, transparent 70%);
+          "
+        ></div>
+
+        <!-- layout: featured + grid -->
+        <div class="space-y-4">
+
+          <!-- FEATURED: HB00 -->
+          <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-6 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.18),0_0_55px_rgba(56,189,248,0.10)]">
+            <!-- glow blobs -->
+            <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
+              <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
+              <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-fuchsia-400/10 blur-2xl"></div>
+            </div>
+            <!-- scanline -->
+            <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-64"></div>
+
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Robotics</p>
+                    <h3 class="mt-1 text-lg font-semibold text-slate-50">HB00 Robot — Autonomous Mobile Robot</h3>
+                  </div>
+                  <span class="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-[11px] text-slate-300">
+                    <span class="h-1.5 w-1.5 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.7)]"></span>
+                    active
+                  </span>
+                </div>
+
+                <p class="mt-3 text-sm text-slate-300">
+                  Designed, built, and programmed a fully autonomous robot from scratch — hardware, control software, and computer-vision navigation.
+                </p>
+
+                <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+                  <li>3D-printed mechanical structure + electrical systems + motion control, lighting, sound, and onboard display.</li>
+                  <li>Single integrated Raspberry Pi control system coordinating motors, LEDs, servo gestures, sound, and display animations.</li>
+                  <li>Pi Camera + pre-trained model (custom numeric detection) to track boundaries, detect turn/stop signs, and follow a printed course.</li>
+                </ul>
+              </div>
+
+              <div class="md:w-[260px] space-y-3">
+                <div class="flex flex-wrap gap-2 text-[11px] text-slate-200">
+                  <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Raspberry Pi OS</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Python</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">OpenCV</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Roboflow</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">SolidWorks</span>
+                </div>
+
+                <div class="rounded-xl border border-slate-800 bg-slate-950/30 p-3 text-xs text-slate-400">
+                  <p class="font-mono">status://autonomous</p>
+                  <p class="font-mono">system://pi-cam + cv</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
+          </article>
+
+          <!-- GRID: 2 columns on md+ -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <!-- SnapBite -->
+            <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-5 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(168,85,247,0.20),0_0_45px_rgba(168,85,247,0.08)]">
+              <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
+                <div class="absolute -top-24 -left-24 h-48 w-48 rounded-full bg-purple-400/10 blur-2xl"></div>
+                <div class="absolute -bottom-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
+              </div>
+              <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-56"></div>
+
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Mobile + AI</p>
+                  <h3 class="mt-1 font-medium text-slate-50">SnapBite</h3>
+                </div>
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-[11px] text-slate-300">
+                  <span class="h-1.5 w-1.5 rounded-full bg-fuchsia-300/80 shadow-[0_0_18px_rgba(244,114,182,0.7)]"></span>
+                  building
+                </span>
+              </div>
+
+              <p class="mt-3 text-sm text-slate-300">
+                Identifies meals from photos and returns nutrition using a fine-tuned YOLOv8 model + USDA API, backed by serverless AWS.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200">
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">React Native</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Expo</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Python</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">AWS (Amplify/S3/Lambda)</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Roboflow</span>
+              </div>
+
+              <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+                <li>AWS Amplify auth + YOLOv8 meal detection from user uploads.</li>
+                <li>Fine-tuned with 294 labeled images to classify 3 Ethiopian dishes.</li>
+                <li>Serverless pipeline: S3 → Lambda inference → nutrition results.</li>
+              </ul>
+
+              <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
+                <span class="font-mono">pipeline://photo→nutrition</span>
+                <span class="font-mono">v0.x</span>
+              </div>
+
+              <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
+            </article>
+
+            <!-- neuroNote -->
+            <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-5 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.18),0_0_45px_rgba(56,189,248,0.08)]">
+              <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
+                <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
+                <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-fuchsia-400/10 blur-2xl"></div>
+              </div>
+              <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-56"></div>
+
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Full-Stack</p>
+                  <h3 class="mt-1 font-medium text-slate-50">neuroNote</h3>
+                </div>
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-[11px] text-slate-300">
+                  <span class="h-1.5 w-1.5 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.7)]"></span>
+                  shipped
+                </span>
+              </div>
+
+              <p class="mt-3 text-sm text-slate-300">
+                Flashcard app that extracts text from PDFs and auto-generates Q/A pairs for fast studying.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200">
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">React</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Flask</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Python</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">MongoDB</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Firebase</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">OpenAI API</span>
+              </div>
+
+              <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+                <li>PDF → extracted text → 5+ Q/A pairs generated automatically.</li>
+              </ul>
+
+              <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
+                <span class="font-mono">status://study-mode</span>
+                <span class="font-mono">v1.0</span>
+              </div>
+
+              <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
+            </article>
+
+            <!-- Hackathon -->
+            <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-5 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(168,85,247,0.20),0_0_45px_rgba(168,85,247,0.08)]">
+              <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
+                <div class="absolute -top-24 -left-24 h-48 w-48 rounded-full bg-purple-400/10 blur-2xl"></div>
+                <div class="absolute -bottom-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
+              </div>
+              <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-56"></div>
+
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Hackathon</p>
+                  <h3 class="mt-1 font-medium text-slate-50">Gardening & Sustainability Web App</h3>
+                </div>
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-[11px] text-slate-300">
+                  <span class="h-1.5 w-1.5 rounded-full bg-fuchsia-300/80 shadow-[0_0_18px_rgba(244,114,182,0.7)]"></span>
+                  award
+                </span>
+              </div>
+
+              <p class="mt-3 text-sm text-slate-300">
+                Honorable Mention — Hesburgh Libraries Hackathon (April 2025). Won $750 (1st place from CS for Good).
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200">
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">React</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Firebase</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">Tailwind</span>
+              </div>
+
+              <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+                <li>Donations + guides + social tools to promote local gardening and sustainability.</li>
+              </ul>
+
+              <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
+                <span class="font-mono">status://impact</span>
+                <span class="font-mono">Apr-2025</span>
+              </div>
+
+              <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
+            </article>
+
+            <!-- Mini Kernel -->
+            <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-5 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.18),0_0_45px_rgba(56,189,248,0.08)]">
+              <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
+                <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
+                <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-fuchsia-400/10 blur-2xl"></div>
+              </div>
+              <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-56"></div>
+
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Systems</p>
+                  <h3 class="mt-1 font-medium text-slate-50">Mini Kernel</h3>
+                </div>
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-[11px] text-slate-300">
+                  <span class="h-1.5 w-1.5 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.7)]"></span>
+                  in-progress
+                </span>
+              </div>
+
+              <p class="mt-3 text-sm text-slate-300">
+                Upcoming project — building a mini kernel to learn OS internals by implementing core primitives.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200">
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">C</span>
+                <span class="px-3 py-1 rounded-full bg-slate-900/60 border border-slate-800/70">OS Internals</span>
+              </div>
+
+              <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+                <li>Initial milestones: boot + interrupts + basic scheduling.</li>
+              </ul>
+
+              <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
+                <span class="font-mono">status://bring-up</span>
+                <span class="font-mono">v0.0</span>
+              </div>
+
+              <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+
+    <section id="stack" class="space-y-8">
+      <div>
+        <h2 class="text-lg font-semibold tracking-tight">Stack</h2>
+        <p class="text-xs text-slate-400">
+          Technologies I am learning and learned :)
+        </p>
+      </div>
+
+      <!-- subtle divider -->
+      <div class="h-px w-full bg-gradient-to-r from-transparent via-slate-700/60 to-transparent"></div>
+
+      <!-- Programming Languages -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-medium text-slate-200">Programming Languages</h3>
+          <span class="text-[11px] font-mono text-slate-500">lang://core</span>
+        </div>
+
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-300">
+          <span class="stack-item">C</span>
+          <span class="stack-item">C++</span>
+          <span class="stack-item">Python</span>
+          <span class="stack-item">MATLAB</span>
+          <span class="stack-item">JavaScript</span>
+          <span class="stack-item">TypeScript</span>
+          <span class="stack-item">HTML5</span>
+          <span class="stack-item">CSS</span>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="h-px w-full bg-slate-800/70"></div>
+
+      <!-- Frameworks & Tools -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-medium text-slate-200">Frameworks & Tools</h3>
+          <span class="text-[11px] font-mono text-slate-500">framework://tooling</span>
+        </div>
+
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-300 leading-relaxed">
+          <span class="stack-item">React.js</span>
+          <span class="stack-item">React Native</span>
+          <span class="stack-item">Flask</span>
+          <span class="stack-item">Firebase</span>
+          <span class="stack-item">AWS (S3, Lambda, DynamoDB, API Gateway, SQS, EC2)</span>
+          <span class="stack-item">MongoDB</span>
+          <span class="stack-item">Tailwind CSS</span>
+          <span class="stack-item">Git / GitHub</span>
+          <span class="stack-item">Roboflow</span>
+          <span class="stack-item">Postman</span>
+          <span class="stack-item">OpenCV</span>
+          <span class="stack-item">PyTorch</span>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="h-px w-full bg-slate-800/70"></div>
+
+      <!-- Software -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-medium text-slate-200">Software & Platforms</h3>
+          <span class="text-[11px] font-mono text-slate-500">env://systems</span>
+        </div>
+
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-300">
+          <span class="stack-item">Visual Studio</span>
+          <span class="stack-item">Linux</span>
+          <span class="stack-item">macOS</span>
+          <span class="stack-item">SolidWorks / CAD</span>
+          <span class="stack-item">Raspberry Pi OS</span>
+          <span class="stack-item">MS Office (Word, Excel, PowerPoint)</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- lightweight stack styling -->
+    <style>
+      .stack-item {
+        position: relative;
+        padding-left: 0.75rem;
+      }
+
+      .stack-item::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: rgb(148 163 184);
+        opacity: 0.6;
+      }
+  </style>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/60 py-6">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <p>© <span id="year"></span> Biruk Molla. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="https://github.com/birukm3" class="hover:text-slate-200">github</a>
+        <a href="https://www.linkedin.com/in/birukmolla" class="hover:text-slate-200">linkedin</a>
+        <a href="mollabiruk63@gmail.com" class="hover:text-slate-200">email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
