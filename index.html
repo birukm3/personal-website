@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Your Name | Developer & Student</title>
+  <title>Biruk Molla | Future Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Tailwind CDN -->
@@ -55,6 +55,29 @@
           <p class="text-xs text-slate-400">Computer Science Student</p>
         </div>
       </div>
+
+      <div class="pt-1">
+        <a
+          href="Biruk Molla Resume.pdf"
+          target="_blank"
+          rel="noopener"
+          class="group inline-flex items-center gap-3 rounded-xl border border-slate-700/70 bg-gradient-to-br from-slate-950 to-slate-900 px-5 py-3 text-sm text-slate-100 shadow-[0_0_0_1px_rgba(148,163,184,0.08)] transition hover:-translate-y-0.5 hover:border-slate-500/80 hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]"
+        >
+          <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-300 group-hover:text-white transition">
+            📄
+          </span>
+
+          <span class="flex flex-col leading-tight">
+            <span class="font-medium tracking-tight">View My Resume</span>
+            <span class="text-xs text-slate-400 group-hover:text-slate-300 transition">
+              PDF
+            </span>
+          </span>
+
+          <span class="ml-1 text-slate-400 group-hover:text-white transition">↗</span>
+        </a>
+      </div>
+
 
       <!-- intro text -->
       <div class="space-y-3 text-sm leading-relaxed text-slate-300">
@@ -134,7 +157,7 @@
           </div>
         </article>
 
-        <!-- ========== NOTRE DAME ========== -->
+        <!-- NOTRE DAME-->
         <article class="flex items-start gap-5">
           <div class="flex flex-col items-center pt-1">
             <div class="h-5 w-5 rounded-full border-2 border-slate-100 flex items-center justify-center">
@@ -176,7 +199,7 @@
       </div>
     </section>
 
-    <!-- PROJECTS (RE-ARRANGED, FUTURISTIC, NO PICTURES) -->
+    <!-- PROJECTS -->
     <section id="projects" class="space-y-6">
       <div>
         <h2 class="text-lg font-semibold tracking-tight">Projects</h2>
@@ -184,7 +207,6 @@
       </div>
 
       <div class="relative">
-        <!-- subtle grid -->
         <div
           class="pointer-events-none absolute inset-0 -z-10 opacity-[0.18]"
           style="
@@ -196,17 +218,15 @@
           "
         ></div>
 
-        <!-- layout: featured + grid -->
         <div class="space-y-4">
 
           <!-- FEATURED: HB00 -->
           <article class="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-6 shadow-[0_0_0_1px_rgba(148,163,184,0.06)] transition hover:-translate-y-0.5 hover:border-slate-700/90 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.18),0_0_55px_rgba(56,189,248,0.10)]">
-            <!-- glow blobs -->
             <div class="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
               <div class="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-cyan-400/10 blur-2xl"></div>
               <div class="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-fuchsia-400/10 blur-2xl"></div>
             </div>
-            <!-- scanline -->
+
             <div class="pointer-events-none absolute inset-x-0 -top-16 h-32 rotate-6 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 blur-sm transition duration-700 group-hover:opacity-100 group-hover:translate-y-64"></div>
 
             <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -231,6 +251,24 @@
                   <li>Single integrated Raspberry Pi control system coordinating motors, LEDs, servo gestures, sound, and display animations.</li>
                   <li>Pi Camera + pre-trained model (custom numeric detection) to track boundaries, detect turn/stop signs, and follow a printed course.</li>
                 </ul>
+
+                <div class="mt-5 flex flex-wrap gap-4 text-sm">
+                  <a
+                    href="https://github.com/birukm3/HB00"
+                    target="_blank"
+                    class="text-slate-300 hover:text-white underline underline-offset-4 transition"
+                  >
+                    View Repo →
+                  </a>
+
+                  <a
+                    href="https://drive.google.com/drive/folders/1ZbMG54ovkLb5TwOQh9bcU_J1nK6OWsQl?usp=share_link"
+                    target="_blank"
+                    class="text-slate-300 hover:text-white underline underline-offset-4 transition"
+                  >
+                    Images & Videos →
+                  </a>
+                </div>
               </div>
 
               <div class="md:w-[260px] space-y-3">
@@ -252,7 +290,6 @@
             <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5"></div>
           </article>
 
-          <!-- GRID: 2 columns on md+ -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <!-- SnapBite -->
@@ -291,6 +328,16 @@
                 <li>Fine-tuned with 294 labeled images to classify 3 Ethiopian dishes.</li>
                 <li>Serverless pipeline: S3 → Lambda inference → nutrition results.</li>
               </ul>
+
+              <div class="mt-5">
+                <a
+                  href="https://github.com/birukm3/SnapBite"
+                  target="_blank"
+                  class="text-slate-300 hover:text-white underline underline-offset-4 transition"
+                >
+                  View Repo →
+                </a>
+              </div>
 
               <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
                 <span class="font-mono">pipeline://photo→nutrition</span>
@@ -431,7 +478,6 @@
     </section>
 
     <!-- STACK -->
-
     <section id="stack" class="space-y-8">
       <div>
         <h2 class="text-lg font-semibold tracking-tight">Stack</h2>
@@ -440,7 +486,7 @@
         </p>
       </div>
 
-      <!-- subtle divider -->
+      <!-- divider -->
       <div class="h-px w-full bg-gradient-to-r from-transparent via-slate-700/60 to-transparent"></div>
 
       <!-- Programming Languages -->
@@ -524,8 +570,9 @@
         color: rgb(148 163 184);
         opacity: 0.6;
       }
-  </style>
+    </style>
 
+  </main>
 
   <!-- FOOTER -->
   <footer class="border-t border-slate-800/60 py-6">
@@ -534,7 +581,7 @@
       <div class="flex gap-4">
         <a href="https://github.com/birukm3" class="hover:text-slate-200">github</a>
         <a href="https://www.linkedin.com/in/birukmolla" class="hover:text-slate-200">linkedin</a>
-        <a href="mollabiruk63@gmail.com" class="hover:text-slate-200">email</a>
+        <a href="mailto:mollabiruk63@gmail.com" class="hover:text-slate-200">email</a>
       </div>
     </div>
   </footer>
