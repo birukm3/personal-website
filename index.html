@@ -19,9 +19,8 @@
         <a href="#stack" class="hover:text-slate-50">stack</a>
       </nav>
       <div class="flex items-center gap-4 text-xs text-slate-400">
-        <button class="hover:text-slate-100">EN</button>
-        <button class="hover:text-slate-100">Amharic</button>
-        <span class="text-lg">☀️</span>
+        <button id="btn-en" class="hover:text-slate-100">EN</button>
+        <button id="btn-am" class="hover:text-slate-100">AH</button>
       </div>
     </div>
   </header>
@@ -31,14 +30,28 @@
     <!-- ABOUT / HERO -->
     <section id="about" class="space-y-8">
       <div class="space-y-2">
-        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
-          morning afternoon night.
-        </h1>
-        <p class="text-slate-300 max-w-2xl">
-          I love programming, writing, and sometimes you'll see me playing basketball. I’m always exploring new ideas
-          that spark my curiosity and keep me building.
-        </p>
+        <!-- EN -->
+        <div data-lang="en">
+          <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            good morning, whenever you’re reading this.
+          </h1>
+          <p class="text-slate-300 max-w-2xl">
+            I love programming, writing, and sometimes you'll see me playing basketball. I’m always exploring new ideas
+            that spark my curiosity and keep me building.
+          </p>
+        </div>
+      
+        <!-- AM -->
+        <div data-lang="am" class="hidden">
+          <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            እንደምን አደራቹ፣ በምትፈልጉበት ሰዐት ስታነቡት።
+          </h1>
+          <p class="text-slate-300 max-w-2xl">
+            ፕሮግራሚንግ እና መጻፍ በጣም እወዳለሁ። አንዳንድ ጊዜ ደግሞ ኳስ ስጫወት ታዩኛላቹ። ሁልጊዜ አዳዲስ ሀሳቦችን እመርምራለሁ፣ እነሱን ሀሳቦች መገንባት እወዳላሁ።
+          </p>
+        </div>
       </div>
+      
 
       <!-- profile row -->
       <div class="flex items-center gap-4">
@@ -327,6 +340,30 @@
                 <li>PDF → extracted text → 5+ Q/A pairs generated automatically.</li>
               </ul>
 
+              <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
+                <!-- Repo -->
+                <a
+                  href="https://github.com/birukm3/NeuroNote"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center h-[38px] text-slate-300 hover:text-white underline underline-offset-4 transition"
+                >
+                  View Repo →
+                </a>
+              
+                <!-- Live Demo -->
+                <a
+                  href="https://neuronotee.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 h-[38px] rounded-xl border border-slate-800 bg-slate-950/40 px-4 text-slate-200 transition hover:border-slate-600 hover:text-white"
+                >
+                  <span class="text-base">↗</span>
+                  Live Demo
+                </a>
+              </div>
+              
+
               <div class="mt-5 text-xs text-slate-400 flex items-center justify-between">
                 <span class="font-mono">status://study-mode</span>
                 <span class="font-mono">v1.0</span>
@@ -601,15 +638,28 @@
     <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
       <p>© <span id="year"></span> Biruk Molla. All rights reserved.</p>
       <div class="flex gap-4">
-        <a href="https://github.com/birukm3" class="hover:text-slate-200">github</a>
-        <a href="https://www.linkedin.com/in/birukmolla" class="hover:text-slate-200">linkedin</a>
-        <a href="mailto:mollabiruk63@gmail.com" class="hover:text-slate-200">email</a>
+        <a href="https://github.com/birukm3" target = "_blank" rel = "noopener" class="hover:text-slate-200">github</a>
+        <a href="https://www.linkedin.com/in/birukmolla" target = "_blank" rel = "noopener" class="hover:text-slate-200">linkedin</a>
+        <a href="mailto:mollabiruk63@gmail.com" target = "_blank" rel = "noopener" class="hover:text-slate-200">email</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    const btnEN = document.getElementById("btn-en");
+    const btnAM = document.getElementById("btn-am");
+
+    function setLang(lang) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.classList.toggle("hidden", el.getAttribute("data-lang") !== lang);
+      });
+
+  }
+
+    btnEN?.addEventListener("click", () => setLang("en"));
+    btnAM?.addEventListener("click", () => setLang("am"));
+
   </script>
 </body>
 </html>
